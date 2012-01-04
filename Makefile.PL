@@ -4,30 +4,30 @@ use warnings;
 
 
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Prefix some test output',
-  'AUTHOR' => 'Peter Sergeant <pete@clueball.com>',
-  'BUILD_REQUIRES' => {},
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+  "ABSTRACT" => "Prefix some test output",
+  "AUTHOR" => "Peter Sergeant <pete\@clueball.com>",
+  "BUILD_REQUIRES" => {},
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'Test-More-Prefix',
-  'EXE_FILES' => [],
-  'LICENSE' => 'perl',
-  'NAME' => 'Test::More::Prefix',
-  'PREREQ_PM' => {
-    'IO::Scalar' => '0',
-    'Moose' => '0',
-    'Test::Builder' => '0',
-    'Test::More' => '0'
+  "DISTNAME" => "Test-More-Prefix",
+  "EXE_FILES" => [],
+  "LICENSE" => "perl",
+  "NAME" => "Test::More::Prefix",
+  "PREREQ_PM" => {
+    "IO::Scalar" => 0,
+    "Moose" => 0,
+    "Test::Builder" => 0,
+    "Test::More" => 0
   },
-  'VERSION' => '0.001',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "0.002",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 

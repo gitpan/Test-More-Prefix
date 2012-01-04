@@ -6,4 +6,7 @@ Makefile.PL
 README
 dist.ini
 lib/Test/More/Prefix.pm
-t/01_sanity.t
+lib/Test/More/Prefix/TB1.pm
+lib/Test/More/Prefix/TB2.pm
+t/010_test_builder_0.t
+t/020_test_builder_2.t
