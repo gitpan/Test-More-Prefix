@@ -1,11 +1,11 @@
 
 
 This archive contains the distribution Test-More-Prefix,
-version 0.002:
+version 0.003:
 
-  Prefix some test output
+  Prefix comments in Test::More output
 
-This software is copyright (c) 2011 by Peter Sergeant <pete@clueball.com>.
+This software is copyright (c) 2012 by Peter Sergeant.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

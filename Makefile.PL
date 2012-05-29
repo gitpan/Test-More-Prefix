@@ -9,8 +9,8 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Prefix some test output",
-  "AUTHOR" => "Peter Sergeant <pete\@clueball.com>",
+  "ABSTRACT" => "Prefix comments in Test::More output",
+  "AUTHOR" => "['Peter Sergeant <pete\@clueball.com>']",
   "BUILD_REQUIRES" => {},
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30"
@@ -25,7 +25,7 @@ my %WriteMakefileArgs = (
     "Test::Builder" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "0.002",
+  "VERSION" => "0.003",
   "test" => {
     "TESTS" => "t/*.t"
   }

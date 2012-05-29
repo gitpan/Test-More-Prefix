@@ -1,4 +1,7 @@
 package Test::More::Prefix::TB2;
+{
+  $Test::More::Prefix::TB2::VERSION = '0.003';
+}
 
 # Load Test::More::Prefix for later versions of Test::Builder
 
@@ -15,6 +18,9 @@ sub test_prefix {
 }
 
 package Test::More::Prefix::ModifierRole::Message;
+{
+  $Test::More::Prefix::ModifierRole::Message::VERSION = '0.003';
+}
 
 use strict;
 use warnings;
@@ -48,6 +54,9 @@ around 'message' => sub {
 no Mouse;
 
 package Test::More::Prefix::ModifierRole::DoneTesting;
+{
+  $Test::More::Prefix::ModifierRole::DoneTesting::VERSION = '0.003';
+}
 
 use strict;
 use warnings;
@@ -64,11 +73,17 @@ no Mouse;
 
 # mst told me to do this :-)
 package TB2::Event::Log;
+{
+  $TB2::Event::Log::VERSION = '0.003';
+}
 use TB2::Mouse;
 with 'Test::More::Prefix::ModifierRole::Message';
 
 # mst told me to do this :-)
 package Test::Builder;
+{
+  $Test::Builder::VERSION = '0.003';
+}
 use TB2::Mouse;
 with 'Test::More::Prefix::ModifierRole::DoneTesting';
 

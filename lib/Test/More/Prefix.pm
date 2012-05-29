@@ -1,8 +1,15 @@
 package Test::More::Prefix;
+{
+  $Test::More::Prefix::VERSION = '0.003';
+}
 
 =head1 NAME
 
 Test::More::Prefix - Prefix some test output
+
+=head1 VERSION
+
+version 0.003
 
 =head1 DESCRIPTION
 
