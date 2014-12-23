@@ -1,15 +1,8 @@
 package Test::More::Prefix;
-{
-  $Test::More::Prefix::VERSION = '0.003';
-}
 
 =head1 NAME
 
 Test::More::Prefix - Prefix some test output
-
-=head1 VERSION
-
-version 0.003
 
 =head1 DESCRIPTION
 
@@ -33,15 +26,15 @@ providing context in noisy and repetitive tests
 
 =head2 Test::Builder
 
-For versions of L<Test::Simple> < 1 which use the original L<Test::Builder>
+For versions of L<Test::Simple> which use the original L<Test::Builder>
 underneath, intercepts calls to L<Test::Builder>'s internal C<_print_comment>
 command and adds your prefix to all defined lines.
 
-=head2 TB2
+=head2 Test::Stream
 
-For versions of L<Test::Simple> > 1 which use this new-fangled TB2 stuff, we
-wrap setting of L<TB2::Event::Log>'s C<message> attribute to prepend the
-prefix. This means that more of the possible output contains the prefix.
+For versions of L<Test::Simple> which use this new-fangled L<Test::Stream>
+stuff, we wrap setting of L<TB2::Event::Log>'s C<message> attribute to prepend
+the prefix. This means that more of the possible output contains the prefix.
 
 =head1 FUNCTIONS
 
@@ -62,8 +55,7 @@ use Test::More;
 
 sub import {
     my ( $class, @args ) = @_;
-    my $version = $Test::Builder::VERSION;
-    if ( $version >  1 ) {
+    if ( $INC{'Test/Stream.pm'} ) {
         require Test::More::Prefix::TB2;
         Test::More::Prefix::TB2->import(@args);
     } else {
