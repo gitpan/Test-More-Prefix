@@ -17,4 +17,4 @@ requires:
   Moose: '0'
   Test::Builder: '0'
   Test::More: '0'
-version: '0.004'
+version: '0.005'

@@ -1,5 +1,5 @@
 package Test::More::Prefix::TB2;
-
+$Test::More::Prefix::TB2::VERSION = '0.005';
 # Load Test::More::Prefix for later versions of Test::Builder
 
 require Exporter;

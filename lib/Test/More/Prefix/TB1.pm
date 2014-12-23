@@ -1,5 +1,5 @@
 package Test::More::Prefix::TB1;
-
+$Test::More::Prefix::TB1::VERSION = '0.005';
 # Load Test::More::Prefix for early versions of Test::Builder
 
 require Exporter;
@@ -15,7 +15,7 @@ sub test_prefix {
 }
 
 package Test::More::Prefix::ModifierRole;
-
+$Test::More::Prefix::ModifierRole::VERSION = '0.005';
 use strict;
 use warnings;
 use Moose::Role;
@@ -38,7 +38,8 @@ before 'done_testing' => sub {
 };
 
 # mst told me to do this :-)
-package Test::Builder;
+package
+    Test::Builder;
 use Moose;
 with 'Test::More::Prefix::ModifierRole';
 
